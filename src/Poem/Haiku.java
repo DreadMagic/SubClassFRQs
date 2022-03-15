@@ -1,7 +1,5 @@
 package Poem;
 
-import java.sql.SQLOutput;
-
 public class Haiku extends Poem {
     public Haiku(){
         super(3);
