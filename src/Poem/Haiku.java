@@ -1,6 +1,8 @@
+package Poem;
+
 import java.sql.SQLOutput;
 
-public class Haiku extends Poem{
+public class Haiku extends Poem {
     public Haiku(){
         super(3);
     }
@@ -16,10 +18,8 @@ public class Haiku extends Poem{
         }
     }
     public void printRhythm(){
-        for(int i = 1; i <= 3; i++) {
-            for (int j = 1; j < getSyllables(i); j++)
-                System.out.print("ta-");
-            System.out.println("ta");
+        for(int i = 1; i <= getNumlines(); i++) {
+            super.printTa(getSyllables(i));
         }
     }
 }

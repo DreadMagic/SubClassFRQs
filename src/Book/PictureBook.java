@@ -1,4 +1,8 @@
-public class PictureBook extends Book{
+package Book;
+
+import Book.Book;
+
+public class PictureBook extends Book {
     private String illustrator;
     public PictureBook(String title, String author, String i){
         super(title,author);

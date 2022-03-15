@@ -1,4 +1,6 @@
-public class Limerick extends Poem{
+package Poem;
+
+public class Limerick extends Poem {
     public Limerick(){
         super(5);
     }
@@ -17,10 +19,8 @@ public class Limerick extends Poem{
     }
 
     public void printRhythm(){
-        for(int i = 1; i <= 5; i++) {
-            for (int j = 1; j < getSyllables(i); j++)
-                System.out.print("ta-");
-            System.out.println("ta");
+        for(int i = 1; i <= getNumlines(); i++) {
+                super.printTa(getSyllables(i));
         }
     }
 }
