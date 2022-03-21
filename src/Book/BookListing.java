@@ -11,6 +11,6 @@ public class BookListing {
     }
     public void printDescription(){
         book.printBookInfo();
-        System.out.println(price);
+        System.out.println(" $" + price);
     }
 }
